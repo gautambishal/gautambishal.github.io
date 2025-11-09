@@ -1,6 +1,135 @@
-<html>
-<head><title>Bishal Gautam</title></head>
-<body>
-<h1>Hi i am bishal gautam . I like java</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishal Gautam | Software Engineer Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set the Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for skill tags */
+        .skill-list-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+        .skill-item {
+            @apply flex items-center p-3 rounded-lg bg-gray-100 dark:bg-gray-700 shadow-sm transition duration-200 hover:shadow-md hover:bg-gray-200 dark:hover:bg-gray-600;
+        }
+        .skill-icon {
+            /* Adjusted size from w-5 h-5 to w-4 h-4 */
+            @apply text-indigo-500 dark:text-indigo-400 mr-3 w-4 h-4;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Profile Card Container -->
+    <main class="w-full max-w-xl bg-white dark:bg-gray-800 shadow-2xl rounded-xl overflow-hidden transform transition-all duration-500 hover:shadow-3xl">
+
+        <!-- Header / Background Graphic -->
+        <div class="h-28 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600"></div>
+
+        <div class="p-8 -mt-16">
+            <!-- Profile Image Placeholder -->
+            <div class="flex justify-center">
+                <!-- Image uses the provided username 'gautambishal' -->
+                <img class="w-32 h-32 object-cover border-4 border-white dark:border-gray-800 rounded-full shadow-lg"
+                     src="https://github.com/gautambishal.png"
+                     alt="Bishal Gautam Profile Picture"
+                     onerror="this.onerror=null; this.src='https://placehold.co/128x128/3b82f6/ffffff?text=BG'">
+            </div>
+
+            <!-- Profile & Summary -->
+            <div class="mt-4 text-center">
+                <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">
+                    Bishal Gautam
+                </h1>
+                <p class="text-xl font-medium text-indigo-500 mt-1">
+                    Senior Software Engineer
+                </p>
+                <p class="mt-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed italic border-t pt-4 border-gray-200 dark:border-gray-700">
+                    Dynamic and experienced Software Engineer specializing in **Java, Spring Boot**, and scalable application development. Skilled in Big Data tools, API design, microservices, and cloud solutions with a proven record of delivering high-quality software solutions.
+                </p>
+            </div>
+
+            <!-- Technical Skills (Redesigned) -->
+            <div class="mt-8">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white border-b border-indigo-500 pb-2 mb-4">
+                    Technical Expertise
+                </h2>
+                <div class="skill-list-container">
+                    <div class="skill-item"><svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>Java / Spring Boot</div>
+                    <div class="skill-item"><svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 1.1.9 2 2 2h12a2 2 0 002-2V9m-4-2h4m-4 0v4m0 0h4"></path></svg>Docker / Kubernetes</div>
+                    <div class="skill-item"><svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14m-9 4V9"></path></svg>Big Data (Spark, Hadoop)</div>
+                    <div class="skill-item"><svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 1.1.9 2 2 2h12a2 2 0 002-2V9m-4-2h4m-4 0v4m0 0h4"></path></svg>AWS / Cloud Solutions</div>
+                    <div class="skill-item"><svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.4 0-4.7 1.2-6 3.2s-1.8 4.7-.6 7.4M20 12c0-2.2-1.8-4-4-4s-4 1.8-4 4 1.8 4 4 4 4-1.8 4-4z"></path></svg>PostgreSQL / Oracle</div>
+                    <div class="skill-item"><svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>CI/CD (Jenkins, Helm)</div>
+                </div>
+            </div>
+
+            <!-- GitHub Commit Graph -->
+            <div class="mt-8 text-center">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white border-b border-indigo-500 pb-2 mb-4">
+                    Activity Snapshot
+                </h2>
+                <!-- GitHub Stats SVG - Replace 'gautambishal' if you have a different username -->
+                <img src="https://github-readme-stats.vercel.app/api/streak?user=gautambishal&theme=dark&hide_border=true&date_format=j%20M%5B%20Y%5D" 
+                     alt="GitHub Streak" 
+                     class="w-full mx-auto rounded-lg shadow-lg border border-gray-200 dark:border-gray-700" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/400x150/1f2937/d1d5db?text=GitHub+Graph+Placeholder'">
+            </div>
+
+            <!-- Social Links / Buttons -->
+            <div class="mt-8 space-y-3">
+                
+                <!-- GitHub Button -->
+                <a href="https://github.com/gautambishal" target="_blank" class="w-full flex items-center justify-center px-4 py-3 border border-transparent text-lg font-bold rounded-lg shadow-xl text-white bg-gray-700 hover:bg-gray-600 transition duration-150 ease-in-out">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.418 2.867 8.134 6.83 9.48.5.092.67.24.67.48V21.688c-2.528.532-3.064-.993-3.064-.993-.412-1.042-.998-1.325-.998-1.325-.805-.548.062-.538.062-.538.895.063 1.365.918 1.365.918.796 1.36 2.088.966 2.593.742.08-.579.314-.966.568-1.187-2-.224-4.1-.992-4.1-4.425 0-.978.35-1.782.918-2.41-.09-.225-.398-1.14.086-2.378 0 0 .75-.24 2.45.92.716-.198 1.47-.3 2.22-.303.75.002 1.504.105 2.22.303 1.698-1.16 2.448-.92 2.448-.92.484 1.238.194 2.153.094 2.378.57.628.916 1.432.916 2.41 0 3.442-2.103 4.2-4.108 4.425.32.278.61.81.61 1.628V21.688c0 .24-.17.388-.67.48C18.133 20.15 21 16.434 21 12.017 21 6.484 16.522 2 12 2z" clip-rule="evenodd" /></svg>
+                    Visit GitHub Profile
+                </a>
+
+                <!-- LinkedIn Button (Placeholder Link) -->
+                <!-- IMPORTANT: Replace 'your_linkedin_url' below with your actual LinkedIn URL -->
+                <a href="your_linkedin_url" target="_blank" class="w-full flex items-center justify-center px-4 py-3 border border-transparent text-lg font-bold rounded-lg shadow-xl text-white bg-blue-700 hover:bg-blue-600 transition duration-150 ease-in-out">
+                    <!-- Placeholder SVG for LinkedIn Icon -->
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.539-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.763 7 2.476v6.759z"/></svg>
+                    Connect on LinkedIn
+                </a>
+
+                <!-- Upwork Button (Placeholder Link) -->
+                <!-- IMPORTANT: Replace 'your_upwork_url' below with your actual Upwork URL -->
+                <a href="your_upwork_url" target="_blank" class="w-full flex items-center justify-center px-4 py-3 border border-transparent text-lg font-bold rounded-lg shadow-xl text-white bg-green-700 hover:bg-green-600 transition duration-150 ease-in-out">
+                    <!-- Placeholder SVG for Upwork Icon (Custom SVG based on Upwork's 'U') -->
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M499.7,0C223.7,0,0,223.7,0,499.7c0,276,223.7,499.7,499.7,499.7c276,0,499.7-223.7,499.7-499.7C999.4,223.7,775.7,0,499.7,0z M499.7,858.7c-197.3,0-359-161.7-359-359c0-197.3,161.7-359,359-359s359,161.7,359,359C858.7,697,697,858.7,499.7,858.7z M367.5,338.2c0-8.9-7.4-16.3-16.3-16.3H269.9c-8.9,0-16.3,7.4-16.3,16.3v29.6c0,16.7,13.7,30.4,30.4,30.4h37.4V590.2h-37.4c-8.9,0-16.3,7.4-16.3,16.3v29.6c0,8.9,7.4,16.3,16.3,16.3h98.8c8.9,0,16.3-7.4,16.3-16.3V354.5C367.5,346.7,367.5,338.2,367.5,338.2z M654.5,457.5c-43.9,0-86.8,11-125.7,33.1c-16.3,9.2-22.3,29.3-13.1,45.6c9.2,16.3,29.3,22.3,45.6,13.1c29.6-17.1,61.9-25.9,94.3-25.9c35.6,0,67.9,13.7,92.5,38.2c24.7,24.7,38.2,57.1,38.2,92.5c0,35.6-13.7,67.9-38.2,92.5c-24.7,24.7-57.1,38.2-92.5,38.2c-32.3,0-64.7-8.9-94.3-25.9c-16.3-9.2-36.4-3.1-45.6,13.1c-9.2,16.3-3.1,36.4,13.1,45.6c44.8,25.9,93.4,39.8,143.7,39.8c77.7,0,151.7-30.8,206.5-85.4c54.9-54.9,85.4-128.9,85.4-206.5c0-77.7-30.8-151.7-85.4-206.5C806.2,488.3,732.2,457.5,654.5,457.5z M475.2,504.6c0-7.4-3.1-13.4-9.2-16.3c-23-11.4-48-18.3-73.8-20.9c-8.9-0.8-15.5-8.2-14.7-17.1c0.8-8.9,8.2-15.5,17.1-14.7c31.1,3.1,61.9,11.8,90.4,26.4c17.1,8.9,23,29.3,14.7,46.1C500,501.9,482.3,509.3,475.2,504.6z"/></svg>
+                    Find on Upwork
+                </a>
+                
+                <!-- Email Button -->
+                <!-- IMPORTANT: Replace 'your_email@example.com' below with your actual email address -->
+                <a href="mailto:your_email@example.com" class="w-full flex items-center justify-center px-4 py-3 border border-indigo-500 text-lg font-bold rounded-lg text-indigo-500 bg-white dark:bg-gray-900 hover:bg-indigo-50 transition duration-150 ease-in-out">
+                    <!-- Placeholder SVG for Email Icon -->
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 001.22 0L21 8m-17 4v7a2 2 0 002 2h12a2 2 0 002-2v-7m-18 0h16"></path></svg>
+                    Contact Bishal (Email)
+                </a>
+            </div>
+            
+            <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700 text-xs text-gray-500 dark:text-gray-400 text-center">
+                &copy; <span id="year"></span> Bishal Gautam.
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script>
+        // Set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
