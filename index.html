@@ -70,15 +70,25 @@
             </div>
 
             <!-- GitHub Commit Graph -->
-            <div class="mt-8 text-center">
+             <div class="mt-8 text-center">
                 <h2 class="text-xl font-bold text-gray-900 dark:text-white border-b border-indigo-500 pb-2 mb-4">
-                    Activity Snapshot
+                    GitHub Activity Calendar
                 </h2>
-                <!-- GitHub Stats SVG - Replace 'gautambishal' if you have a different username -->
-                <img src="https://github-readme-stats.vercel.app/api/streak?user=gautambishal&theme=dark&hide_border=true&date_format=j%20M%5B%20Y%5D" 
-                     alt="GitHub Streak" 
-                     class="w-full mx-auto rounded-lg shadow-lg border border-gray-200 dark:border-gray-700" 
-                     onerror="this.onerror=null; this.src='https://placehold.co/400x150/1f2937/d1d5db?text=GitHub+Graph+Placeholder'">
+                <div class="calendar-container">
+                    <!-- Updated iframe source for optimal loading on GitHub Pages -->
+                    <iframe 
+                        src="https://github.com/gautambishal?tab=contributions"
+                        frameborder="0"
+                        scrolling="no"
+                        width="100%"
+                        height="300px"
+                        title="GitHub Contributions Calendar"
+                        class="w-full"
+                    ></iframe>
+                </div>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                    This calendar reflects contributions to public and private repositories (if allowed by GitHub settings).
+                </p>
             </div>
 
             <!-- Social Links / Buttons -->
